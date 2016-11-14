@@ -5,7 +5,10 @@ import { Hero } from '../hero';
 @Component({
   selector: 'app-hero-form',
   templateUrl: './hero-form.component.html',
-  styleUrls: ['./hero-form.component.sass']
+  styleUrls: [
+    './forms.css',
+    './hero-form.component.sass'
+  ]
 })
 export class HeroFormComponent {
 
