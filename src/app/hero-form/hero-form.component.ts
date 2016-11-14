@@ -19,4 +19,12 @@ export class HeroFormComponent {
   submitted = false;
 
   onSubmit() { this.submitted = true; }
+
+  active = true;
+
+  newHero() {
+    this.model = new Hero(42, '', '');
+    this.active = false;
+    setTimeout(() => this.active = true, 0);
+  }
 }
